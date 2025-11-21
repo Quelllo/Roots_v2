@@ -8,11 +8,11 @@
 const fs = require('fs');
 const path = require('path');
 
-// Colors
+// Colors - Earth tones for Roots
 const colors = {
-  purple: '#5d3a5d',
-  grey: '#eaeaea',
-  yellow: '#fff56e',
+  forestGreen: '#1e4620',
+  warmCream: '#f4f0e6',
+  sageGreen: '#8bc34a',
   white: '#ffffff',
 };
 
@@ -37,58 +37,58 @@ function ensureDir(dirPath) {
 // Generate placeholders
 const placeholders = [
   // Hero
-  { path: 'public/images/hero-poster.jpg', width: 1920, height: 1080, text: 'ROOTS', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/hero-poster.jpg', width: 1920, height: 1080, text: 'ROOTS', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // About
-  { path: 'public/images/about-story.jpg', width: 1200, height: 900, text: 'Our Story', bg: colors.grey, fg: colors.purple },
+  { path: 'public/images/about-story.jpg', width: 1200, height: 900, text: 'Our Story', bg: colors.warmCream, fg: colors.forestGreen },
   
   // Portfolio - Urban Brew
-  { path: 'public/images/portfolio/urban-brew-hero.jpg', width: 800, height: 1000, text: 'Urban Brew', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/urban-brew-1.jpg', width: 1200, height: 900, text: 'Urban Brew 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/urban-brew-2.jpg', width: 1200, height: 900, text: 'Urban Brew 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/urban-brew-3.jpg', width: 1200, height: 900, text: 'Urban Brew 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/urban-brew-4.jpg', width: 1200, height: 900, text: 'Urban Brew 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/urban-brew-hero.jpg', width: 800, height: 1000, text: 'Urban Brew', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/urban-brew-1.jpg', width: 1200, height: 900, text: 'Urban Brew 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/urban-brew-2.jpg', width: 1200, height: 900, text: 'Urban Brew 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/urban-brew-3.jpg', width: 1200, height: 900, text: 'Urban Brew 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/urban-brew-4.jpg', width: 1200, height: 900, text: 'Urban Brew 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Portfolio - Nexus
-  { path: 'public/images/portfolio/nexus-hero.jpg', width: 800, height: 1000, text: 'Nexus', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/nexus-1.jpg', width: 1200, height: 900, text: 'Nexus 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/nexus-2.jpg', width: 1200, height: 900, text: 'Nexus 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/nexus-3.jpg', width: 1200, height: 900, text: 'Nexus 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/nexus-4.jpg', width: 1200, height: 900, text: 'Nexus 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/nexus-hero.jpg', width: 800, height: 1000, text: 'Nexus', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/nexus-1.jpg', width: 1200, height: 900, text: 'Nexus 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/nexus-2.jpg', width: 1200, height: 900, text: 'Nexus 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/nexus-3.jpg', width: 1200, height: 900, text: 'Nexus 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/nexus-4.jpg', width: 1200, height: 900, text: 'Nexus 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Portfolio - EarthWise
-  { path: 'public/images/portfolio/earthwise-hero.jpg', width: 800, height: 1000, text: 'EarthWise', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/earthwise-1.jpg', width: 1200, height: 900, text: 'EarthWise 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/earthwise-2.jpg', width: 1200, height: 900, text: 'EarthWise 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/earthwise-3.jpg', width: 1200, height: 900, text: 'EarthWise 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/earthwise-4.jpg', width: 1200, height: 900, text: 'EarthWise 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/earthwise-hero.jpg', width: 800, height: 1000, text: 'EarthWise', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/earthwise-1.jpg', width: 1200, height: 900, text: 'EarthWise 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/earthwise-2.jpg', width: 1200, height: 900, text: 'EarthWise 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/earthwise-3.jpg', width: 1200, height: 900, text: 'EarthWise 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/earthwise-4.jpg', width: 1200, height: 900, text: 'EarthWise 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Portfolio - Lumina
-  { path: 'public/images/portfolio/lumina-hero.jpg', width: 800, height: 1000, text: 'Lumina', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/lumina-1.jpg', width: 1200, height: 900, text: 'Lumina 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/lumina-2.jpg', width: 1200, height: 900, text: 'Lumina 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/lumina-3.jpg', width: 1200, height: 900, text: 'Lumina 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/lumina-4.jpg', width: 1200, height: 900, text: 'Lumina 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/lumina-hero.jpg', width: 800, height: 1000, text: 'Lumina', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/lumina-1.jpg', width: 1200, height: 900, text: 'Lumina 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/lumina-2.jpg', width: 1200, height: 900, text: 'Lumina 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/lumina-3.jpg', width: 1200, height: 900, text: 'Lumina 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/lumina-4.jpg', width: 1200, height: 900, text: 'Lumina 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Portfolio - Pulse
-  { path: 'public/images/portfolio/pulse-hero.jpg', width: 800, height: 1000, text: 'Pulse Fitness', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/pulse-1.jpg', width: 1200, height: 900, text: 'Pulse 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/pulse-2.jpg', width: 1200, height: 900, text: 'Pulse 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/pulse-3.jpg', width: 1200, height: 900, text: 'Pulse 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/pulse-4.jpg', width: 1200, height: 900, text: 'Pulse 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/pulse-hero.jpg', width: 800, height: 1000, text: 'Pulse Fitness', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/pulse-1.jpg', width: 1200, height: 900, text: 'Pulse 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/pulse-2.jpg', width: 1200, height: 900, text: 'Pulse 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/pulse-3.jpg', width: 1200, height: 900, text: 'Pulse 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/pulse-4.jpg', width: 1200, height: 900, text: 'Pulse 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Portfolio - Artisan
-  { path: 'public/images/portfolio/artisan-hero.jpg', width: 800, height: 1000, text: 'Artisan', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/portfolio/artisan-1.jpg', width: 1200, height: 900, text: 'Artisan 1', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/artisan-2.jpg', width: 1200, height: 900, text: 'Artisan 2', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/portfolio/artisan-3.jpg', width: 1200, height: 900, text: 'Artisan 3', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/portfolio/artisan-4.jpg', width: 1200, height: 900, text: 'Artisan 4', bg: colors.purple, fg: colors.yellow },
+  { path: 'public/images/portfolio/artisan-hero.jpg', width: 800, height: 1000, text: 'Artisan', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/portfolio/artisan-1.jpg', width: 1200, height: 900, text: 'Artisan 1', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/artisan-2.jpg', width: 1200, height: 900, text: 'Artisan 2', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/portfolio/artisan-3.jpg', width: 1200, height: 900, text: 'Artisan 3', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/portfolio/artisan-4.jpg', width: 1200, height: 900, text: 'Artisan 4', bg: colors.forestGreen, fg: colors.sageGreen },
   
   // Team
-  { path: 'public/images/team/sarah.jpg', width: 600, height: 800, text: 'Sarah Chen', bg: colors.purple, fg: colors.white },
-  { path: 'public/images/team/marcus.jpg', width: 600, height: 800, text: 'Marcus Johnson', bg: colors.grey, fg: colors.purple },
-  { path: 'public/images/team/emma.jpg', width: 600, height: 800, text: 'Emma Rodriguez', bg: colors.purple, fg: colors.yellow },
-  { path: 'public/images/team/david.jpg', width: 600, height: 800, text: 'David Kim', bg: colors.grey, fg: colors.purple },
+  { path: 'public/images/team/sarah.jpg', width: 600, height: 800, text: 'Sarah Chen', bg: colors.forestGreen, fg: colors.white },
+  { path: 'public/images/team/marcus.jpg', width: 600, height: 800, text: 'Marcus Johnson', bg: colors.warmCream, fg: colors.forestGreen },
+  { path: 'public/images/team/emma.jpg', width: 600, height: 800, text: 'Emma Rodriguez', bg: colors.forestGreen, fg: colors.sageGreen },
+  { path: 'public/images/team/david.jpg', width: 600, height: 800, text: 'David Kim', bg: colors.warmCream, fg: colors.forestGreen },
 ];
 
 console.log('🎨 Generating placeholder images...\n');
