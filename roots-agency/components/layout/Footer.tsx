@@ -20,7 +20,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-deep-purple text-white">
+    <footer className="bg-ink-black text-paper-cream">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -42,7 +42,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-300 hover:text-accent-yellow transition-colors text-sm"
+                    className="text-paper-cream/70 hover:text-moss-accent transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Mail size={16} />
                 <a
                   href="mailto:hello@rootsagency.com"
-                  className="hover:text-accent-yellow transition-colors"
+                  className="hover:text-moss-accent transition-colors"
                 >
                   hello@rootsagency.com
                 </a>
@@ -70,7 +70,7 @@ export default function Footer() {
                 <Phone size={16} />
                 <a
                   href="tel:+1234567890"
-                  className="hover:text-accent-yellow transition-colors"
+                  className="hover:text-moss-accent transition-colors"
                 >
                   +1 (234) 567-890
                 </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent-yellow hover:text-deep-purple transition-all"
+                  className="w-10 h-10 border-2 border-paper-cream bg-paper-cream/10 flex items-center justify-center hover:bg-moss-accent hover:text-paper-cream transition-all"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={item.name}

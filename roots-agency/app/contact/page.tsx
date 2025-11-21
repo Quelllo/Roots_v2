@@ -29,7 +29,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-6xl md:text-7xl font-heading font-bold text-deep-purple mb-6">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-ink-black mb-6">
               Let's Talk
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
@@ -49,7 +49,7 @@ export default function ContactPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-deep-purple mb-8">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-ink-black mb-8">
                 Get in Touch
               </h2>
               <p className="text-lg text-gray-700 mb-12 leading-relaxed">
@@ -60,16 +60,16 @@ export default function ContactPage() {
               <div className="space-y-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-deep-purple rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-ink-black border-2 border-ink-black flex items-center justify-center flex-shrink-0">
                     <Mail className="text-white" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-deep-purple mb-1">
+                    <h3 className="font-semibold text-ink-black mb-1 font-mono uppercase tracking-wider">
                       Email
                     </h3>
                     <a
                       href="mailto:hello@rootsagency.com"
-                      className="text-gray-600 hover:text-deep-purple transition-colors"
+                      className="text-gray-600 hover:text-root-green transition-colors"
                     >
                       hello@rootsagency.com
                     </a>
@@ -78,16 +78,16 @@ export default function ContactPage() {
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-deep-purple rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-ink-black border-2 border-ink-black flex items-center justify-center flex-shrink-0">
                     <Phone className="text-white" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-deep-purple mb-1">
+                    <h3 className="font-semibold text-ink-black mb-1 font-mono uppercase tracking-wider">
                       Phone
                     </h3>
                     <a
                       href="tel:+1234567890"
-                      className="text-gray-600 hover:text-deep-purple transition-colors"
+                      className="text-gray-600 hover:text-root-green transition-colors"
                     >
                       +1 (234) 567-890
                     </a>
@@ -96,11 +96,11 @@ export default function ContactPage() {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-deep-purple rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-ink-black border-2 border-ink-black flex items-center justify-center flex-shrink-0">
                     <MapPin className="text-white" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-deep-purple mb-1">
+                    <h3 className="font-semibold text-ink-black mb-1 font-mono uppercase tracking-wider">
                       Location
                     </h3>
                     <p className="text-gray-600">
@@ -114,7 +114,7 @@ export default function ContactPage() {
 
               {/* Office Hours */}
               <div className="mt-12 p-6 bg-light-grey rounded-lg">
-                <h3 className="font-semibold text-deep-purple mb-3">
+                <h3 className="font-semibold text-ink-black mb-3 font-mono uppercase tracking-wider">
                   Office Hours
                 </h3>
                 <div className="space-y-1 text-sm text-gray-600">
@@ -135,14 +135,14 @@ export default function ContactPage() {
                 onSubmit={handleSubmit}
                 className="bg-white rounded-lg shadow-lg p-8"
               >
-                <h3 className="text-2xl font-heading font-bold text-deep-purple mb-6">
+                <h3 className="text-2xl font-heading font-bold text-ink-black mb-6">
                   Send us a Message
                 </h3>
 
                 <div className="space-y-6">
                   {/* Name */}
                   <div>
-                    <Label htmlFor="name" className="text-deep-purple">
+                    <Label htmlFor="name" className="text-ink-black font-mono uppercase tracking-wider">
                       Name *
                     </Label>
                     <Input
@@ -156,36 +156,36 @@ export default function ContactPage() {
 
                   {/* Email */}
                   <div>
-                    <Label htmlFor="email" className="text-deep-purple">
-                      Email *
-                    </Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      className="mt-2"
-                      placeholder="your@email.com"
-                    />
-                  </div>
+                    <Label htmlFor="email" className="text-ink-black font-mono uppercase tracking-wider">
+                    Email *
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    required
+                    className="mt-2 border-2 border-ink-black"
+                    placeholder="your@email.com"
+                  />
+                </div>
 
-                  {/* Company */}
-                  <div>
-                    <Label htmlFor="company" className="text-deep-purple">
-                      Company
-                    </Label>
-                    <Input
-                      id="company"
-                      type="text"
-                      className="mt-2"
-                      placeholder="Your company (optional)"
-                    />
-                  </div>
+                {/* Company */}
+                <div>
+                  <Label htmlFor="company" className="text-ink-black font-mono uppercase tracking-wider">
+                    Company
+                  </Label>
+                  <Input
+                    id="company"
+                    type="text"
+                    className="mt-2 border-2 border-ink-black"
+                    placeholder="Your company (optional)"
+                  />
+                </div>
 
-                  {/* Service */}
-                  <div>
-                    <Label htmlFor="service" className="text-deep-purple">
-                      Service Interested In
-                    </Label>
+                {/* Service */}
+                <div>
+                  <Label htmlFor="service" className="text-ink-black font-mono uppercase tracking-wider">
+                    Service Interested In
+                  </Label>
                     <select
                       id="service"
                       className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
                   {/* Message */}
                   <div>
-                    <Label htmlFor="message" className="text-deep-purple">
+                    <Label htmlFor="message" className="text-ink-black font-mono uppercase tracking-wider">
                       Message *
                     </Label>
                     <Textarea
@@ -214,7 +214,7 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <Button
                     type="submit"
-                    className="w-full bg-deep-purple hover:bg-deep-purple/90 text-white py-6 text-lg"
+                    className="w-full bg-ink-black hover:bg-root-green text-paper-cream py-6 text-lg border-4 border-ink-black font-mono uppercase tracking-wider transition-all"
                   >
                     Send Message
                   </Button>

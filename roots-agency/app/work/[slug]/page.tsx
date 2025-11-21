@@ -21,11 +21,11 @@ export default function CaseStudyPage() {
       <main className="min-h-screen">
         <Header />
         <div className="container mx-auto px-6 py-32 text-center">
-          <h1 className="text-4xl font-heading font-bold text-deep-purple mb-4">
+          <h1 className="text-4xl font-heading font-bold text-ink-black mb-4">
             Project Not Found
           </h1>
           <Link href="/">
-            <Button className="bg-deep-purple hover:bg-deep-purple/90">
+            <Button className="bg-ink-black hover:bg-ink-black/90 text-paper-cream">
               Back to Home
             </Button>
           </Link>
@@ -49,7 +49,7 @@ export default function CaseStudyPage() {
           >
             <Link
               href="/"
-              className="inline-flex items-center text-deep-purple hover:text-deep-purple/80 mb-8 group"
+              className="inline-flex items-center text-ink-black hover:text-root-green mb-8 group"
             >
               <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" />
               Back to Work
@@ -57,10 +57,10 @@ export default function CaseStudyPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-8">
               <div>
-                <span className="inline-block px-4 py-1 bg-accent-yellow text-deep-purple font-semibold rounded-full text-sm mb-4">
+                <span className="inline-block px-4 py-1 bg-moss-accent text-paper-cream font-mono uppercase tracking-wider text-sm mb-4 border-2 border-moss-accent">
                   {project.category}
                 </span>
-                <h1 className="text-5xl md:text-6xl font-heading font-bold text-deep-purple mb-6">
+                <h1 className="text-5xl md:text-6xl font-heading font-bold text-ink-black mb-6">
                   {project.title}
                 </h1>
                 <p className="text-xl text-gray-700 leading-relaxed">
@@ -72,7 +72,7 @@ export default function CaseStudyPage() {
                 <div className="flex items-center gap-3 text-gray-600">
                   <User size={20} />
                   <div>
-                    <p className="text-sm font-semibold text-deep-purple">
+                    <p className="text-sm font-semibold text-ink-black font-mono uppercase tracking-wider">
                       Client
                     </p>
                     <p>{project.client}</p>
@@ -81,21 +81,21 @@ export default function CaseStudyPage() {
                 <div className="flex items-center gap-3 text-gray-600">
                   <Calendar size={20} />
                   <div>
-                    <p className="text-sm font-semibold text-deep-purple">
+                    <p className="text-sm font-semibold text-ink-black font-mono uppercase tracking-wider">
                       Year
                     </p>
                     <p>{project.year}</p>
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-deep-purple mb-2">
+                  <p className="text-sm font-semibold text-ink-black font-mono uppercase tracking-wider mb-2">
                     Services
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 bg-light-grey text-deep-purple text-sm rounded-full"
+                        className="px-3 py-1 bg-paper-cream text-ink-black text-sm border-2 border-ink-black font-mono uppercase tracking-wider"
                       >
                         {tag}
                       </span>
@@ -137,7 +137,7 @@ export default function CaseStudyPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-deep-purple mb-6">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-ink-black mb-6">
                 The Challenge
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -158,7 +158,7 @@ export default function CaseStudyPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-deep-purple mb-6">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-ink-black mb-6">
                 Our Solution
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -204,7 +204,7 @@ export default function CaseStudyPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-deep-purple mb-8">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-ink-black mb-8">
                 The Results
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -217,8 +217,8 @@ export default function CaseStudyPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
-                    <div className="w-8 h-8 bg-accent-yellow rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-deep-purple font-bold text-sm">
+                    <div className="w-8 h-8 bg-moss-accent border-2 border-ink-black flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-ink-black font-bold text-sm">
                         ✓
                       </span>
                     </div>
@@ -232,7 +232,7 @@ export default function CaseStudyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-deep-purple">
+      <section className="py-24 bg-ink-black">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -249,7 +249,7 @@ export default function CaseStudyPage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-accent-yellow text-deep-purple hover:bg-accent-yellow/90 text-lg px-8 py-6"
+                className="bg-moss-accent text-paper-cream hover:bg-paper-cream hover:text-ink-black text-lg px-8 py-6 border-4 border-moss-accent font-mono uppercase tracking-wider transition-all"
               >
                 Start Your Project
               </Button>

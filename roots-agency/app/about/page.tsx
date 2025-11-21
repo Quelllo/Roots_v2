@@ -66,7 +66,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-6xl md:text-7xl font-heading font-bold text-deep-purple mb-6">
+            <h1 className="text-6xl md:text-7xl font-heading font-bold text-ink-black mb-6">
               We Are Roots
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-deep-purple mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-ink-black mb-6">
                 Our Story
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -140,7 +140,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-deep-purple mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-ink-black mb-4">
               What We Believe
             </h2>
             <p className="text-xl text-gray-600">
@@ -159,13 +159,13 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <motion.div
-                  className="w-16 h-16 bg-deep-purple rounded-full flex items-center justify-center mx-auto mb-6"
+                  className="w-16 h-16 bg-ink-black border-4 border-ink-black flex items-center justify-center mx-auto mb-6"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
                   <value.icon className="text-white" size={28} />
                 </motion.div>
-                <h3 className="text-xl font-heading font-bold text-deep-purple mb-3">
+                <h3 className="text-xl font-heading font-bold text-ink-black mb-3">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -187,7 +187,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-deep-purple mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-ink-black mb-4">
               Meet The Team
             </h2>
             <p className="text-xl text-gray-600">
@@ -212,9 +212,9 @@ export default function AboutPage() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-deep-purple opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-ink-black opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 </div>
-                <h3 className="text-xl font-heading font-bold text-deep-purple mb-1">
+                <h3 className="text-xl font-heading font-bold text-ink-black mb-1">
                   {member.name}
                 </h3>
                 <p className="text-gray-600">{member.role}</p>
@@ -225,7 +225,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-deep-purple">
+      <section className="py-24 bg-ink-black">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -242,7 +242,7 @@ export default function AboutPage() {
             </p>
             <a
               href="/contact"
-              className="inline-block bg-accent-yellow text-deep-purple font-semibold px-8 py-4 rounded-lg hover:bg-accent-yellow/90 transition-colors text-lg"
+              className="inline-block bg-moss-accent text-paper-cream font-mono uppercase tracking-wider px-8 py-4 border-4 border-moss-accent hover:bg-paper-cream hover:text-ink-black transition-all text-lg"
             >
               Start a Conversation
             </a>
