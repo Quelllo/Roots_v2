@@ -1,0 +1,66 @@
+# Image Placeholders
+
+This directory should contain the following images for the website to work properly.
+
+## Required Images:
+
+### Hero Section
+- hero-poster.jpg (1920x1080) - Hero section background poster
+
+### Portfolio
+- portfolio/urban-brew-hero.jpg (800x1000)
+- portfolio/urban-brew-1.jpg (1200x900)
+- portfolio/urban-brew-2.jpg (1200x900)
+- portfolio/urban-brew-3.jpg (1200x900)
+- portfolio/urban-brew-4.jpg (1200x900)
+
+- portfolio/nexus-hero.jpg (800x1000)
+- portfolio/nexus-1.jpg (1200x900)
+- portfolio/nexus-2.jpg (1200x900)
+- portfolio/nexus-3.jpg (1200x900)
+- portfolio/nexus-4.jpg (1200x900)
+
+- portfolio/earthwise-hero.jpg (800x1000)
+- portfolio/earthwise-1.jpg (1200x900)
+- portfolio/earthwise-2.jpg (1200x900)
+- portfolio/earthwise-3.jpg (1200x900)
+- portfolio/earthwise-4.jpg (1200x900)
+
+- portfolio/lumina-hero.jpg (800x1000)
+- portfolio/lumina-1.jpg (1200x900)
+- portfolio/lumina-2.jpg (1200x900)
+- portfolio/lumina-3.jpg (1200x900)
+- portfolio/lumina-4.jpg (1200x900)
+
+- portfolio/pulse-hero.jpg (800x1000)
+- portfolio/pulse-1.jpg (1200x900)
+- portfolio/pulse-2.jpg (1200x900)
+- portfolio/pulse-3.jpg (1200x900)
+- portfolio/pulse-4.jpg (1200x900)
+
+- portfolio/artisan-hero.jpg (800x1000)
+- portfolio/artisan-1.jpg (1200x900)
+- portfolio/artisan-2.jpg (1200x900)
+- portfolio/artisan-3.jpg (1200x900)
+- portfolio/artisan-4.jpg (1200x900)
+
+### About Page
+- about-story.jpg (1200x900) - About page story image
+
+### Team
+- team/sarah.jpg (600x800)
+- team/marcus.jpg (600x800)
+- team/emma.jpg (600x800)
+- team/david.jpg (600x800)
+
+## Sources for Placeholder Images:
+- Unsplash.com
+- Pexels.com
+- Generated via AI tools
+- Or create simple colored rectangles with project names
+
+## Quick Setup:
+You can use placeholder image services temporarily:
+- https://placehold.co/800x1000/5d3a5d/fff56e?text=Project+Name
+- https://via.placeholder.com/800x1000
+

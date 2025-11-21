@@ -1,0 +1,23 @@
+# Video Placeholders
+
+This directory should contain the following videos:
+
+## Required Videos:
+
+### Hero Section
+- hero-bg.mp4 - Background video for hero section
+  - Recommended: Abstract motion graphics, creative workspace, or design-related footage
+  - Duration: 10-30 seconds (looped)
+  - Resolution: 1920x1080 or higher
+  - Format: MP4 (H.264)
+  - File size: Keep under 5MB for performance
+
+## Sources for Videos:
+- Pexels.com (free stock videos)
+- Mixkit.co (free video assets)
+- Coverr.co (free homepage videos)
+
+## Alternative:
+If you don't have a video yet, the hero section will work with just the poster image.
+Consider using abstract animations, creativity-themed videos, or gradient animations.
+
